@@ -32,9 +32,7 @@ const DescriptionFilm = ({ info }) => {
 			</div>
 
 			<div className={classes.detaliesFilm}>
-				<h1>
-					{info.titleText.text !== null ? info.titleText.text : 'NO INFO'}
-				</h1>
+				<h1>{info.titleText !== null ? info.titleText.text : 'NO INFO'}</h1>
 				<div className={classes.miniInfo}>
 					<p>
 						Rating:{' '}

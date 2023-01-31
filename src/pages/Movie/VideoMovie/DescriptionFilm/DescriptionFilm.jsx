@@ -31,9 +31,7 @@ const DescriptionFilm = ({ info }) => {
 			</div>
 
 			<div className={classes.detaliesFilm}>
-				<h1>
-					{info.titleText.text !== null ? info.titleText.text : 'NO INFO'}
-				</h1>
+				<h1>{info.titleText !== null ? info.titleText.text : 'NO INFO'}</h1>
 				<div className={classes.miniInfo}>
 					<p>
 						Rating:{' '}
@@ -71,7 +69,9 @@ const DescriptionFilm = ({ info }) => {
 						</span>
 					</p>
 				</div>
-				<h2 className={classes.description}>{info.plot.plotText.plainText}</h2>
+				<h2 className={classes.description}>
+					{info.plot !== null ? info.plot.plotText.plainText : 'No description'}
+				</h2>
 			</div>
 		</div>
 	);
