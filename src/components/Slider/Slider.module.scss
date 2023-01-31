@@ -1,0 +1,116 @@
+.slider {
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  gap: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgb(45, 45, 45);
+  background: linear-gradient(90deg, rgba(45, 45, 45, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  box-shadow: 0px 0px 10px #000000, 0px 0px 100px 40px #000000 inset;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: 1250px) {
+    width: 1000px;
+  }
+
+  @media (max-width: 1170px) {
+    width: 600px;
+  }
+
+  @media (max-width: 900px) {
+    width: 600px;
+  }
+
+  @media (max-width: 800px) {
+    width: 600px;
+    overflow-x: scroll;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 700px) {
+    width: 550px;
+    overflow-x: scroll;
+  }
+
+  @media (max-width: 650px) {
+    width: 300px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  @media (max-width: 500px) {
+    width: 350px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+    @media (max-width: 450px) {
+      width: 300px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    @media (max-width: 400px) {
+      width: 275px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+  .buttonLeft {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 45px;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    transform: scale(0);
+    transition: all 0.4s;
+    transform: rotate(90deg) scale(0);
+  }
+
+  .buttonRight {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 45px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    transform: rotate(90deg) scale(0);
+  }
+
+  .sliderItem {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s;
+    position: relative;
+
+    @media (max-width: 900px) {
+      width: 700px;
+    }
+  }
+
+  &:hover>.buttonRight {
+    transform: rotate(90deg) scale(1);
+  }
+
+  &:hover>.buttonLeft {
+    transform: rotate(90deg) scale(1);
+  }
+}

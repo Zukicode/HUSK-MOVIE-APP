@@ -1,0 +1,44 @@
+.relaseData {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 700;
+  }
+
+  .year {
+    background: #1B262C;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+
+  .month {
+    background: #3282B8;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+
+  .day {
+    background: #E8D2A6;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+
+  .iconRelase {
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

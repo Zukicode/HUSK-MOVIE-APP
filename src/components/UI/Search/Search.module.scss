@@ -1,0 +1,38 @@
+.content {
+  position: relative;
+  border-radius: 10px;
+
+  .searchIcon {
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    opacity: 0.6;
+  }
+  
+  .search {
+    padding: 7px 30px;
+    font-size: 16px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    color: #1b1b1b;
+    font-weight: 300;
+  }
+  
+  .searchClear {
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    opacity: 0.6;
+    transition: all 0.3s;
+    transform: scale(0);
+    cursor: pointer;
+  }
+  
+  &:hover > .searchClear {
+    transform: scale(1);
+  }
+}
+

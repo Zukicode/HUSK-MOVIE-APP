@@ -1,0 +1,37 @@
+.sliderDetalies {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1250px) {
+    width: 40%;
+  }
+
+  .description {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+    .detaliesMovie {
+      text-align: justify;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 300;
+      @media (max-width: 1250px) {
+        font-size: 14px;
+      }
+    }
+
+    h1 {
+      color: #ffffff;
+      font-weight: 700;
+      @media (max-width: 1250px) {
+          font-size: 21px;
+        }
+    }
+  }
+}
