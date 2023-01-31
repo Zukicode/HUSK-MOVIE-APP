@@ -6,7 +6,11 @@ import classes from './PlayerSeries.module.scss';
 const PlayerFilm = ({ video }) => {
 	return (
 		<div className={classes.content}>
-			<iframe src={video} frameBorder='0'></iframe>
+			<iframe
+				src={video}
+				allowFullScreen='yes'
+				frameBorder='0'
+				scrolling='no'></iframe>
 		</div>
 	);
 };

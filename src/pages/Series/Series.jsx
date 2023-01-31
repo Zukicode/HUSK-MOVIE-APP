@@ -55,9 +55,10 @@ const Series = ({ favoriteItems, setFavoriteItems }) => {
 		setLoading(true);
 		axios
 			.get(
-				`https://moviesdatabase.p.rapidapi.com/titles/search/title/${search}/?info=custom_info&sort=pos.incr`,
+				`https://moviesdatabase.p.rapidapi.com/titles/search/title/${search}/?info=custom_info&limit=20&sort=pos.incr`,
 				options
 			)
+
 			.then(data => {
 				setItems(data.data.results);
 				setLoading(false);
